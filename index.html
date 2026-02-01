@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
-            --primary: 360_F_376587666_hNuiKYIAtnfDjaFBwwM38w5qC6vjHfRp.jpg
+            --primary: #2c3e50; /* Deep Navy */
             --secondary: #34495e;
             --accent: #3498db; /* Tech Blue */
             --text: #333;
@@ -23,9 +23,13 @@
         }
 
         header {
-            background: var(--primary);
+            /* Replace 'background-image.jpg' with your uploaded file name */
+            background: linear-gradient(rgba(44, 62, 80, 0.85), rgba(44, 62, 80, 0.85)), 
+                        url('360_F_376587666_hNuiKYIAtnfDjaFBwwM38w5qC6vjHfRp.jpg');
+            background-size: cover;
+            background-position: center;
             color: white;
-            padding: 4rem 2rem;
+            padding: 5rem 2rem;
             text-align: center;
         }
 
