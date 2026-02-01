@@ -23,23 +23,37 @@
         }
 
         header {
-            /* Replace 'background-image.jpg' with your uploaded file name */
-            background: linear-gradient(rgba(44, 62, 80, 0.85), rgba(44, 62, 80, 0.85)), 
-                        url('360_F_376587666_hNuiKYIAtnfDjaFBwwM38w5qC6vjHfRp.jpg');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 5rem 2rem;
-            text-align: center;
-        }
+    /* Lower tint (0.2) makes the JPG very visible */
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                url('360_F_376587666_hNuiKYIAtnfDjaFBwwM38w5qC6vjHfRp.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax effect: image stays still while you scroll */
+    color: white;
+    padding: 8rem 2rem;
+    text-align: center;
+}
 
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 2rem;
-        }
+.hero-box {
+    /* The Glass Effect */
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px); /* This blurs the JPG behind the box */
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 2.5rem;
+    display: inline-block;
+    max-width: 600px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
 
-        .hero h1 { margin: 0; font-size: 2.5rem; letter-spacing: 1px; }
+.hero-box h1 {
+    margin: 0;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
         .hero p { font-size: 1.2rem; opacity: 0.9; }
 
         .section-title {
