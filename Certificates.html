@@ -4,52 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certifications | Kyle Moodie</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css"> <style>
+    <link rel="stylesheet" href="style.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
         .cert-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
-            padding: 2rem 0;
+            margin-top: 30px;
         }
         .cert-card {
             background: white;
-            border-radius: 12px;
+            border-left: 5px solid var(--accent);
             padding: 20px;
-            text-align: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-            border-top: 5px solid var(--accent);
-        }
-        .cert-card:hover {
-            transform: translateY(-5px);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
         }
         .cert-icon {
             font-size: 2.5rem;
-            color: #0066ff; /* IBM/Coursera Blue */
-            margin-bottom: 15px;
+            color: #006699; /* IBM Blue */
+            margin-right: 20px;
         }
-        .issuer {
-            font-weight: bold;
-            color: var(--secondary);
-            font-size: 0.9rem;
-            text-transform: uppercase;
-        }
-        .cert-title {
-            margin: 10px 0;
-            font-size: 1.1rem;
-            color: var(--primary);
-            min-height: 50px;
-        }
+        .cert-info h3 { margin: 0; font-size: 1.1rem; color: var(--primary); }
+        .cert-info p { margin: 5px 0; font-size: 0.9rem; color: #666; }
         .verify-btn {
             display: inline-block;
-            margin-top: 15px;
-            padding: 8px 20px;
-            background: var(--primary);
-            color: white;
-            text-decoration: none;
-            border-radius: 20px;
+            margin-top: 10px;
             font-size: 0.8rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -61,81 +46,87 @@
         <li><a href="events.html">Events</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="services.html">Services</a></li>
-        <li><a href="certificates.html" class="active">Certificates</a></li>
+        <li><a href="certificates.html" style="color: var(--accent);">Certificates</a></li>
     </ul>
 </nav>
 
-<header style="padding: 4rem 2rem; background: var(--primary); color: white; text-align: center; margin-top: 50px;">
-    <h1>Professional Certifications</h1>
-    <p>Continuous learning in Agile, DevOps, and Data Science</p>
-  <nav class="main-nav">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="certificates.html">Certificates</a></li>
-    </ul>
-</nav>
+<header style="padding: 4rem 2rem; background: var(--primary); color: white; text-align: center;">
+    <h1>Professional Credentials</h1>
+    <p>Bridging Business Operations with Technical Excellence</p>
 </header>
 
 <div class="container">
+    <h2 class="section-title">Technical & Agile Certifications</h2>
     <div class="cert-grid">
         
         <div class="cert-card">
             <i class="fab fa-python cert-icon"></i>
-            <div class="issuer">IBM | Coursera</div>
-            <h3 class="cert-title">Python for Data Science, AI & Development</h3>
-            <a href="#" class="verify-btn">Verify Credential</a>
+            <div class="cert-info">
+                <h3>Python for Data Science, AI & Development</h3>
+                <p>IBM | Coursera</p>
+                <a href="#" class="verify-btn">Verify Credential <i class="fas fa-external-link-alt"></i></a>
+            </div>
         </div>
 
         <div class="cert-card">
             <i class="fas fa-sync cert-icon"></i>
-            <div class="issuer">IBM | Coursera</div>
-            <h3 class="cert-title">Introduction to Agile Development and Scrum</h3>
-            <a href="#" class="verify-btn">Verify Credential</a>
+            <div class="cert-info">
+                <h3>Agile Development and Scrum</h3>
+                <p>IBM | Coursera</p>
+                <a href="#" class="verify-btn">Verify Credential <i class="fas fa-external-link-alt"></i></a>
+            </div>
         </div>
 
         <div class="cert-card">
             <i class="fas fa-infinity cert-icon"></i>
-            <div class="issuer">IBM | Coursera</div>
-            <h3 class="cert-title">Introduction to DevOps</h3>
-            <a href="#" class="verify-btn">Verify Credential</a>
+            <div class="cert-info">
+                <h3>Introduction to DevOps</h3>
+                <p>IBM | Coursera</p>
+                <a href="#" class="verify-btn">Verify Credential <i class="fas fa-external-link-alt"></i></a>
+            </div>
         </div>
 
         <div class="cert-card">
             <i class="fas fa-cloud cert-icon"></i>
-            <div class="issuer">IBM | Coursera</div>
-            <h3 class="cert-title">Introduction to Cloud Computing</h3>
-            <a href="#" class="verify-btn">Verify Credential</a>
+            <div class="cert-info">
+                <h3>Introduction to Cloud Computing</h3>
+                <p>IBM | Coursera</p>
+                <a href="#" class="verify-btn">Verify Credential <i class="fas fa-external-link-alt"></i></a>
+            </div>
         </div>
 
         <div class="cert-card">
-            <i class="fas fa-laptop-code cert-icon"></i>
-            <div class="issuer">IBM | Coursera</div>
-            <h3 class="cert-title">Introduction to Software Engineering</h3>
-            <a href="#" class="verify-btn">Verify Credential</a>
+            <i class="fas fa-terminal cert-icon"></i>
+            <div class="cert-info">
+                <h3>Linux Commands & Shell Scripting</h3>
+                <p>IBM | Coursera</p>
+                <a href="#" class="verify-btn">Verify Credential <i class="fas fa-external-link-alt"></i></a>
+            </div>
         </div>
 
         <div class="cert-card">
-            <i class="fab fa-linux cert-icon"></i>
-            <div class="issuer">IBM | Coursera</div>
-            <h3 class="cert-title">Linux Commands & Shell Scripting</h3>
-            <a href="#" class="verify-btn">Verify Credential</a>
+            <i class="fab fa-github cert-icon"></i>
+            <div class="cert-info">
+                <h3>Getting Started with Git & GitHub</h3>
+                <p>IBM | Coursera</p>
+                <a href="#" class="verify-btn">Verify Credential <i class="fas fa-external-link-alt"></i></a>
+            </div>
         </div>
 
-        <div class="cert-card">
-            <i class="fab fa-git-alt cert-icon"></i>
-            <div class="issuer">IBM | Coursera</div>
-            <h3 class="cert-title">Getting Started with Git & GitHub</h3>
-            <a href="#" class="verify-btn">Verify Credential</a>
-        </div>
+    </div>
 
+    <h2 class="section-title" style="margin-top: 50px;">Academic Foundation</h2>
+    <div class="cert-card">
+        <i class="fas fa-user-graduate cert-icon"></i>
+        <div class="cert-info">
+            <h3>Bachelor of Science (BS)</h3>
+            <p>Pittsburg State University | Pittsburg, KS</p>
+        </div>
     </div>
 </div>
 
 <footer>
-    <p>&copy; 2026 Kyle Moodie | <a href="index.html" style="color: white;">Back to Home</a></p>
+    <p>&copy; 2026 Kyle Moodie | <a href="https://www.linkedin.com/in/kyle-moodie9790" style="color: white;">LinkedIn</a></p>
 </footer>
 
 </body>
